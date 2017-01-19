@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Legend of Zelda</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/w3.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/blockScroll.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/blockScroll.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" id="open" class="openbtn" onclick="openNav()"><img id="openbtn" src="image/img4.png"><span id="menutxt">Menu</span></a>
+  <a href="javascript:void(0)" id="close" class="openbtn" onclick="closeNav()"><img id="openbtn" src="image/img4.png"><p id="Menu"><span id="menutxt">Menu</span></p></a>
+  <a  id ="text" href="#pres">Présentation</a>
+  <a id ="text" href="#OOT">Zelda OOT</a>
+  <a id ="text" href="#">Clients</a>
+  <a id ="text" href="#">Contact</a>
+</div>
+
+
+
+<div id="main">
+<div id = "pres">
+	<div class="row animated fadeInDown"> 
+		<div class="col-md-5"></div>
+		<img class="col-img-responsive" src="image/img5.png" style="margin-top: 5px ">
+		</div>
+	<div class="row animated fadeInLeft" >
+		<img class="img-responsive" src="image/img1.jpg" style="margin-left: 140px;margin-top:50px;border: 5px solid;float: left;">
+		<p style="float:left;margin-left:50px;margin-top:80px;margin-right: 300px;margin-bottom: 400px"> The Legend Of Zelda est une licence Nitendo qui a été créé en </p>
+		</div>
+	<div class="row animated fadeInRight">
+		<img class="img-responsive" src="image/img3.jpg" style="float:right; margin-right: 140px;margin-top:50px;border: 5px solid; width:700px;height: 800px; margin-bottom: 20px">
+		<p style="float:right;margin-right:20px;margin-top: 80px;margin-left: 400px;">HEGEHGEZROHERGORZIJO</p>
+	</div>
+	</div>
+
+	<div id="OOT">
+	<div class="row animated fadeInLeft" >
+		<img class="img-responsive" src="image/img6.png" style="margin-left: 140px;margin-top:50px;border: 5px solid;float: left; width: 600px;height: 400px;margin-bottom: 5px">
+		</div>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+$(".sidenav #text").hide();
+$(".sidenav #close").hide();
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "200px";
+    document.getElementById("main").style.marginLeft = "200px";
+    $(".sidenav #text").show(200);
+	$(".sidenav #close").show(200);
+	$(".sidenav #close #Menu").show(200);
+	$(".sidenav #open").hide();
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "60px";
+    document.getElementById("main").style.marginLeft= "0px";
+    $(".sidenav #text").hide();
+	$(".sidenav #close").hide();
+	$(".sidenav #open").show(100);
+
+}
+</script>
+</body>
+
+</html>
