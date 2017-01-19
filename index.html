@@ -29,30 +29,44 @@
 <div id = "pres">
 	<div class="row animated fadeInDown"> 
 		<div class="col-md-5"></div>
-		<img class="col-img-responsive" src="image/img5.png" style="margin-top: 5px ">
-		</div>
-	<div class="row animated fadeInLeft" >
-		<img class="img-responsive" src="image/img1.jpg" style="margin-left: 140px;margin-top:50px;border: 5px solid;float: left;">
-		<p style="float:left;margin-left:50px;margin-top:80px;margin-right: 300px;margin-bottom: 400px"> The Legend Of Zelda est une licence Nitendo qui a été créé en </p>
-		</div>
-	<div class="row animated fadeInRight">
-		<img class="img-responsive" src="image/img3.jpg" style="float:right; margin-right: 140px;margin-top:50px;border: 5px solid; width:700px;height: 800px; margin-bottom: 20px">
-		<p style="float:right;margin-right:20px;margin-top: 80px;margin-left: 400px;">HEGEHGEZROHERGORZIJO</p>
+		<img class="col-img-responsive" src="image/img5.png" style="margin-top: 5px;">
 	</div>
+	<div class="row animated fadeInLeft">
+		<img class="img-responsive" src="image/img1.jpg" style="margin-left: 140px;margin-top:20px;border: 5px solid;float: left;">
+		<p style="float:left;margin-left:50px;margin-top:80px;margin-right: 300px;margin-bottom: 300px"> The Legend Of Zelda est une licence Nitendo qui a été créé en </p>
 	</div>
+	<div class="row presOpenBar" style="background-color: rgba(231,231,231,0.5); margin-top: 20px;">
+			<div class="col-md-6"></div>
+			<div class="col-md-1 animated fadeInUp">
+			<a href="javascript:void(0)" onclick="presOpen()"><img class="img-responsive presSuite" src="image/fleche.png" style="width: 50px; height: 50px;margin-top: 5px;margin-bottom: 5px"></a>
+			</div>
+		</div>
+	<div class="presSection">
+		<div class="row animated fadeInRight">
+			<img class="img-responsive" src="image/img3.jpg" style="float:right; margin-right: 140px;margin-top:50px;border: 5px solid; width:700px;height: 800px; margin-bottom: 20px">
+			<p style="float:right;margin-right:20px;margin-top: 80px;margin-left: 400px;">HEGEHGEZROHERGORZIJO</p>
+		</div>
 
-	<div id="OOT">
-	<div class="row animated fadeInLeft" >
-		<img class="img-responsive" src="image/img6.png" style="margin-left: 140px;margin-top:50px;border: 5px solid;float: left; width: 600px;height: 400px;margin-bottom: 5px">
+	<div class="row presCloseBar" style="background-color: rgba(231,231,231,0.5); margin-top: 20px;">
+			<div class="col-md-6"></div>
+			<div class="col-md-1 animated fadeInUp">
+			<a href="javascript:void(0)" onclick="presClose()"><img class="img-responsive presSuite" src="image/flecheinv.png" style="width: 50px; height: 50px;margin-top: 5px;margin-bottom: 5px"></a>
+			</div>
 		</div>
+</div>
+<div id="OOT">
+	<div class="row animated fadeInLeft" >
+		<img class="img-responsive" src="image/img6.png" style="margin-left: 140px;margin-top:20px;border: 5px solid;float: left; width: 600px;height: 400px;margin-bottom: 5px">
 	</div>
-
+</div>
+	</div>
 </div>
 
 <script type="text/javascript">
 
 $(".sidenav #text").hide();
 $(".sidenav #close").hide();
+$(".presSection").hide();
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "200px";
@@ -69,7 +83,14 @@ function closeNav() {
     $(".sidenav #text").hide();
 	$(".sidenav #close").hide();
 	$(".sidenav #open").show(100);
-
+}
+function presOpen() {
+	$(".presSection").show();
+	$(".presOpenBar").hide();
+}
+function presClose(){
+	$(".presSection").hide();
+	$(".presOpenBar").show(100);
 }
 </script>
 </body>

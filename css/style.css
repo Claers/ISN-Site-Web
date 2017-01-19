@@ -76,3 +76,13 @@ body{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+.presSuite{
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+.presSuite:hover{
+    transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+}
