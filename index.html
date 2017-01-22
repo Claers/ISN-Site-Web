@@ -14,37 +14,50 @@
 </head>
 <body>
 
-<div id="mySidenav" class="sidenav">
+<div id="mySidenav" class="sidenav animated fadeInLeft">
   <a href="javascript:void(0)" id="open" class="openbtn" onclick="openNav()"><img id="openbtn" src="image/img4.png"><span id="menutxt">Menu</span></a>
   <a href="javascript:void(0)" id="close" class="openbtn" onclick="closeNav()"><img id="openbtn" src="image/img4.png"><p id="Menu"><span id="menutxt">Menu</span></p></a>
   <a  id ="text" href="#pres">Présentation</a>
   <a id ="text" href="#OOT">Zelda OOT</a>
-  <a id ="text" href="#">Clients</a>
-  <a id ="text" href="#">Contact</a>
+  <a id ="text" href="#MM">Zelda MM</a>
+  <a id ="text" href="#TP">Zelda TP</a>
+  <a id="text" href="#SS">Zelda SS</a>
+  <a id= "text" href="WW">Zelda WW</a>
+  <a id= "text" href="BOTW">Zelda BOTW</a>
 </div>
 
 
 
 <div id="main">
 <div id = "pres">
+
 	<div class="row animated fadeInDown"> 
 		<div class="col-md-5"></div>
 		<img class="col-img-responsive" src="image/img5.png" style="margin-top: 5px;">
 	</div>
+
 	<div class="row animated fadeInLeft">
-		<img class="img-responsive" src="image/img1.jpg" style="margin-left: 140px;margin-top:20px;border: 5px solid;float: left;">
-		<p style="float:left;margin-left:50px;margin-top:80px;margin-right: 300px;margin-bottom: 300px"> The Legend Of Zelda est une licence Nitendo qui a été créé en </p>
+		<img id='img' class="img-responsive" src="image/img1.jpg" style="margin-left: 140px;margin-top:20px;border: 5px solid;float: left;">
+		<p style="float:right;margin-left:10px;margin-top:170px;margin-right: 30px;margin-bottom: 300px;text-decoration: none;font-size: 15px;text-align: center;word-break: break-all;"> 
+		The Legend Of Zelda est une des licences phares de Nintendo, comme Mario ou Pokemon. Le premier opus est sorti en 1986 sur NES au Japon et en<br> 
+		1987 en Europe. C'est a l'époque un franc succès et en 1988 plus de 2 millions de cartouches sont vendues. C'est un jeu de type action-aventure <br>
+		qui prend place dans un univers fantasy à forte inspiration médiévale. Il mele des phases d'énigme et de combats. Dans chaque opus nous retrouvons <br>
+		donc un jeune garcon, Link, qui tentera de s'opposer aux forces maléfiques qui tentent de détruire Hyrule tout en assurant la sécurité de la princesse <br>
+		Zelda
+		</p>
 	</div>
+
 	<div class="row presOpenBar" style="background-color: rgba(231,231,231,0.5); margin-top: 20px;">
 			<div class="col-md-6"></div>
 			<div class="col-md-1 animated fadeInUp">
 			<a href="javascript:void(0)" onclick="presOpen()"><img class="img-responsive presSuite" src="image/fleche.png" style="width: 50px; height: 50px;margin-top: 5px;margin-bottom: 5px"></a>
 			</div>
 		</div>
+
 	<div class="presSection">
 		<div class="row animated fadeInRight">
-			<img class="img-responsive" src="image/img3.jpg" style="float:right; margin-right: 140px;margin-top:50px;border: 5px solid; width:700px;height: 800px; margin-bottom: 20px">
-			<p style="float:right;margin-right:20px;margin-top: 80px;margin-left: 400px;">HEGEHGEZROHERGORZIJO</p>
+			<img id="img" class="img-responsive" src="image/img3.jpg" style="float:right; margin-right: 120px;margin-top:50px;border: 5px solid; width:700px;height: 800px; margin-bottom: 20px">
+			<p style="float:right;margin-right:20px;margin-top: 80px;margin-left: 400px;text-decoration: none;font-size: 15px">Dans </p>
 		</div>
 
 	<div class="row presCloseBar" style="background-color: rgba(231,231,231,0.5); margin-top: 20px;">
@@ -54,19 +67,78 @@
 			</div>
 		</div>
 </div>
-<div id="OOT">
-	<div class="row animated fadeInLeft" >
-		<img class="img-responsive" src="image/img6.png" style="margin-left: 140px;margin-top:20px;border: 5px solid;float: left; width: 600px;height: 400px;margin-bottom: 5px">
-	</div>
 </div>
+
+<div id="OOT">
+	<div class="row animated fadeInRight" >
+		<img id="img" class= "img-responsive" src="image/img6.png" style="margin-right: 120px;margin-top:20px;border: 5px solid;float: right; width: 600px;height: 400px;margin-bottom: 5px">
+	</div>
+
+	
+	<div class="row OOTOpenBar" style="background-color: rgba(231,231,231,0.5); margin-top: 20px;">
+			<div class="col-md-6"></div>
+			<div class="col-md-1 animated fadeInUp">
+			<a href="javascript:void(0)" onclick="OOTOpen()"><img class="img-responsive presSuite" src="image/fleche.png" style="width: 50px; height: 50px;margin-top: 5px;margin-bottom: 5px"></a>
+			</div>
+		</div>
+
+	<div class="OOTSection">
+		<div class="row animated fadeInLeft">
+			<img id="img" class="img-responsive" src="image/img10.jpg" style="float:left; margin-left: 120px;margin-top:50px;border: 5px solid; width:700px;height: 600px; margin-bottom: 20px">
+		</div>
+
+		<div class="row OOTCloseBar" style="background-color: rgba(231,231,231,0.5); margin-top: 20px;">
+			<div class="col-md-6"></div>
+			<div class="col-md-1 animated fadeInUp">
+			<a href="javascript:void(0)" onclick="OOTClose()"><img class="img-responsive presSuite" src="image/flecheinv.png" style="width: 50px; height: 50px;margin-top: 5px;margin-bottom: 5px"></a>
+			</div>
+		</div>
 	</div>
 </div>
 
+<div id="MM">
+	<div class="row animated fadeInLeft">
+		<img id="img" class="img-responsive" src="image/img8.jpg" style="margin-left: 140px;margin-top: 20px;border: 5px solid;float: left;width: 600px;height: 350px;margin-bottom: 5px;">
+		<a href="javascript:void(0)" onclick="Ben()"><img id="Ben" class="img-responsive" src="Ben/mm.png" style="float: right;margin-right: 30px;margin-bottom: 5px; width: 200px;height: 180px;margin-top: 100px"></a>
+	</div>
+
+	<div class="row MMOpenBar" style="background-color: rgba(231,231,231,0.5); margin-top: 20px;">
+			<div class="col-md-6"></div>
+			<div class="col-md-1 animated fadeInUp">
+			<a href="javascript:void(0)" onclick="MMOpen()"><img class="img-responsive presSuite" src="image/fleche.png" style="width: 50px; height: 50px;margin-top: 5px;margin-bottom: 5px"></a>
+			</div>
+		</div>
+
+	<div class="MMSection">
+		<div class="row animated fadeInRight">
+			<img id="img" class="img-responsive" src="image/img10.jpg" style="float:right; margin-right: 120px;margin-top:50px;border: 5px solid; width:700px;height: 600px; margin-bottom: 20px">
+		</div>
+
+		<div class="row MMCloseBar" style="background-color: rgba(231,231,231,0.5); margin-top: 20px;">
+			<div class="col-md-6"></div>
+			<div class="col-md-1 animated fadeInUp">
+			<a href="javascript:void(0)" onclick="MMClose()"><img class="img-responsive presSuite" src="image/flecheinv.png" style="width: 50px; height: 50px;margin-top: 5px;margin-bottom: 5px"></a>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div class ="Footer">
+	<div class="row animated fadeInUp" style="background-color: rgb(0,0,0);text-decoration: none;font-size: 15px;color: #818181;">
+		<div class="col-md-5"></div>
+		<p class="col-md-3" style="margin-left: 110px;">Site créé par Florent Ferrere</p>
+	</div>
+</div>
 <script type="text/javascript">
 
 $(".sidenav #text").hide();
 $(".sidenav #close").hide();
 $(".presSection").hide();
+$(".OOTSection").hide();
+$(".MMSection").hide();
+
+
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "200px";
@@ -84,13 +156,42 @@ function closeNav() {
 	$(".sidenav #close").hide();
 	$(".sidenav #open").show(100);
 }
+
 function presOpen() {
 	$(".presSection").slideDown("slow");
 	$(".presOpenBar").hide();
 }
+
 function presClose(){
 	$(".presSection").slideUp("slow");
 	$(".presOpenBar").show(800);
+}
+
+function OOTOpen(){
+	$(".OOTSection").slideDown("slow");
+	$(".OOTOpenBar").hide();
+}
+
+function OOTClose(){
+	$(".OOTSection").slideUp("slow");
+	$(".OOTOpenBar").show(800);
+}
+
+function MMOpen(){
+	$(".MMSection").slideDown("slow");
+	$(".MMOpenBar").hide();
+}
+
+function MMClose(){
+	$(".MMSection").slideUp("slow");
+	$(".MMOpenBar").show(800);
+}
+
+function Ben(){
+	var BenD = confirm("Etes vous sur de vouloir continuer ?");
+	if (BenD){
+		document.location.href = "Ben.html";
+	}
 }
 </script>
 </body>
