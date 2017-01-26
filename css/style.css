@@ -33,6 +33,18 @@
 body{
 	background-color: rgb(0,0,0);
 }
+
+#chrono{
+    width: 600px;
+    -webkit-transition : width 2s;
+    transition: width 2s;
+}
+
+#chrono:hover{
+   width:700px;
+
+}
+
 .sidenav {
     height: 100%;
     width: 60px;
@@ -105,4 +117,39 @@ body{
 .presSuite:hover{
     transform: scale(1.25);
     -webkit-transform: scale(1.25);
+}
+
+.contain {
+    position: relative;
+    width: 50%;
+}
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 600px;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.contain:hover .image {
+  opacity: 0.3;
+}
+
+.contain:hover .middle {
+  opacity: 1;
+}
+
+.texte {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
