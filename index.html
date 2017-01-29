@@ -31,8 +31,16 @@
 
 
 <div id="main">
-<div id = "pres">
 
+
+
+<div id = "pres">
+<div class="animated fadeInDown " id="message">
+	<div id="inner-message" class="alert alert-warning" style="margin-bottom: 5px;">
+		<button type="button" class="close" data-dismiss="alert">&times;</button>
+		<p style="padding-left: 32%;"> Attention, seul les aspects technique et graphique du site sont terminé, il manque des sections a but d'informations seulement !!! </p>
+	</div>
+</div>
 	<div class="row animated fadeInDown"> 
 		<div class="col-md-5"></div>
 		<img class="col-img-responsive" src="image/img5.png" style="margin-top: 5px;">
@@ -107,7 +115,7 @@
 		<div class="row animated fadeInLeft">
 			<img id="img" class="img-responsive" src="image/img10.jpg" style="float:left; margin-left: 120px;margin-top:50px;border: 5px solid; width:700px;height: 600px; margin-bottom: 20px">
 			<p style="margin-left:0px;margin-top:170px;margin-right: 30px;margin-bottom: 300px;text-decoration: none;font-size: 18px;text-align: center;word-break: break-all;position: relative;"> 
-				Link devra empêcher Ganondorf de récuperer les 3 force de la Triforce : Le Courage, La Sagesse et La Force.<br>
+				Link devra empêcher Ganondorf de récuperer les 3 forces de la Triforce : Le Courage, La Sagesse et La Force.<br>
 				La Triforce est une relique qui représente le symbole des trois déesses d'or d'Hyrule. La légende raconte que<br>
 				celui qui s'emparera des trois fragements pourra réaliser tous ses désirs.<br>
 				Elle était entreposée dans le Temple du Temps mais lorsque Link l'ouvra, Ganondorf tenta de s'en emparer,<br>
@@ -150,6 +158,16 @@
 		</div>
 	</div>
 </div>
+
+
+
+
+<div class="Wait" style="background-color: rgba(100,100,100,0.6);">
+	<p style="font-size: 50px; margin-left: 48%; margin-bottom: 0"> A Venir ! </p>
+</div>
+
+
+<div class="TODO">
 
 <div id="TP">
 	<div class="row animated fadeInRight" >
@@ -205,7 +223,7 @@
 	</div>
 </div>
 
-
+</div>
 </div>
 <div class ="Footer">
 	<div class="row animated fadeInUp" style="background-color: rgb(0,0,0);text-decoration: none;font-size: 15px;color: #818181;">
@@ -222,6 +240,7 @@ $(".OOTSection").hide();
 $(".MMSection").hide();
 $(".TPSection").hide();
 $(".SSSection").hide();
+$(".TODO").hide();
 </script>
 </body>
 
